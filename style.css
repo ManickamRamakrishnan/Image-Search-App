@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0px 60px 0px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+}
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 0px 6px rgb(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color:rgb(88, 95, 100);
+}
+#search-button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 6px rgb(0,0,0,0.2);
+    background-color: rgb(2, 219, 13);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgb(0,0,0,0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    color: hsl(0, 0%, 14%);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#show-button{
+    background-color: rgb(0, 156, 181);
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px auto;
+    cursor: pointer;
+    display: none; 
+}
+@media screen and (max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+@media screen and (max-width:530px) {
+    .search-result{
+        width: 100%;
+    }
+}
